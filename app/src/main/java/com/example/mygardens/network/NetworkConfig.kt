@@ -25,8 +25,10 @@ object NetworkConfig {
                     || (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
                     || "google_sdk" == Build.PRODUCT)
 
-            if (isEmulator) return "http://10.0.2.2:8080/"
-
-            error("Set gardenersApiBaseUrl in local.properties to http://<computer-LAN-IP>:8080/ for a physical device.")
+            return if (isEmulator) {
+                "http://10.0.2.2:8080/"
+            } else {
+                "http://10.0.2.2:8080/"
+            }
         }
 }

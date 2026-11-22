@@ -19,15 +19,10 @@ app/build/
 
 # Gradle files
 .gradle/
+.gradle-user-home/
 
 # Local configuration file (SDK path, local IPs, private properties)
 local.properties
-
-# Local files from the backend checkout, which may share this worktree
-/secrets.properties
-/data/
-/target/
-/HELP.md
 
 # Android Studio / IntelliJ IDEA
 .idea/
