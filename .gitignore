@@ -1,62 +1,54 @@
-HELP.md
-target/
-secrets.properties
-**/local.properties
-**/.gradle/
-**/.gradle-user-home/
-**/.kotlin/
-**/.artifacts/
-**/build/
+# Built application files
 *.apk
+*.aar
+*.ap_
 *.aab
-*.log
 
-# Local credentials and environment overrides
-.env
-.env.*
-!.env.example
-*.properties.local
+# Files for the ART/DALVIK VM
+*.dex
 
-# Local database files and logs
-data/*.mv.db
-data/*.trace.db
-*.sqlite
-*.sqlite3
-*.db
+# Java class files
+*.class
 
-# Local IDE and OS state
+# Generated files
+/bin/
+/gen/
+/out/
+/build/
+app/build/
+
+# Gradle files
+.gradle/
+
+# Local configuration file (SDK path, local IPs, private properties)
+local.properties
+
+# Local files from the backend checkout, which may share this worktree
+/secrets.properties
+/data/
+/target/
+/HELP.md
+
+# Android Studio / IntelliJ IDEA
 .idea/
-.vscode/
 *.iml
+*.iws
+*.ipr
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin / Tooling caches & logs
+.kotlin/
+.artifacts/
+
+# Keystores & Signing secrets
+*.keystore
+!debug.keystore
+*.jks
+*.p12
+*.pem
+
+# OS generated files
 .DS_Store
 Thumbs.db
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
