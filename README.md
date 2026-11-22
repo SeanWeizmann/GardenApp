@@ -13,15 +13,7 @@ Android app. It listens on port 8080 on all network interfaces. An Android emula
 `http://10.0.2.2:8080/`. A physical Android device needs the computer's LAN address in the app base URL, with both
 devices on the same network and Windows Firewall allowing inbound TCP port 8080.
 
-For a physical-device debug build, set `gardenersApiBaseUrl=http://<computer-LAN-IP>:8080/` in
-`client/local.properties`. That file is ignored by Git. Rebuild and reinstall the app after changing it.
-
-## Repository layout and branches
-
-- The Spring Boot backend is in the repository root.
-- The Android Studio project is in `client/`. Open that folder in Android Studio; Git will use the repository root.
-- `server` and `client` branches both start with the complete project. Commit backend changes on `server` and Android
-  changes on `client`, then merge or cherry-pick changes when you want to combine them.
+The Android client is maintained on the separate `client` branch.
 
 The Android app connects to the Spring API, which reads and writes the `customers` and `garden_tasks` tables. In
 Workbench, connect to that same MySQL Server, open the `gardenapp` schema, and refresh the table list after the backend
