@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyGardens</string>
+    <string name="missions">משימות</string>
+    <string name="new_mission">+ משימה חדשה</string>
+    <string name="search_hint">חפש משימה, לקוח או תיאור</string>
+    <string name="filter_all">הכל</string>
+    <string name="filter_open">פתוחות</string>
+    <string name="filter_done">בוצע</string>
+    <string name="filter_today">היום</string>
+    <string name="swipe_info">החליקו משימה הצידה כדי לערוך או למחוק במהירות</string>
+    <string name="completed">הושלם</string>
+    <string name="new_status">חדש</string>
+    <string name="priority_medium">בינונית</string>
+    <string name="priority_low">נמוכה</string>
+    <string name="priority_high">גבוהה</string>
+    <string name="filter_high">דחוף</string>
+    <string name="filter_completed">הושלמו</string>
+    <string name="mission_details">פרטי משימה</string>
+    <string name="address">כתובת:</string>
+    <string name="notes">הערות:</string>
+    <string name="date_time">תאריך ושעה:</string>
+    <string name="customer">לקוח:</string>
+    <string name="close">סגור</string>
+</resources>
